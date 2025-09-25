@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background: white;
+  color: burlywood;
+}
+header {
+  background: gray;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+main {
+  padding: 2rem;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+.product-card {
+  flex: 1 1 calc(35% - 20px);
+  background: white;
+  border-radius: 10px;
+  height: 33%;
+  width: 30%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.product-card h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.product-card p {
+  font-weight: bold;
+  color: green;
+}
+.product-card button {
+  background: green;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-card button:hover {
+  background: green;
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 1 calc(50% - 25px);
+  }
+}
+@media (max-width: 480px) {
+  .product-card {
+    flex: 1 1 100%;
+  }
+}
